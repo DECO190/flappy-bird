@@ -1,0 +1,46 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: #272727;
+}
+
+/* ==================================== */
+
+#screen {
+    height: 824px;
+    width: 568px;
+    border: solid 4px rgba(0, 0, 0, 0.472);
+    background: white;
+    box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.198);
+}
+
+canvas {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+/* ======================================================= */
+
+.screenText {
+    z-index: 12;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+}
